@@ -11,8 +11,15 @@ def sha1(fname):
             sha1hash.update(line.encode('utf-8'))
     return(sha1hash.hexdigest())
 print('Comparing Files:',files[0],'and',files[1])
+files_matched =[]
+files_matched_copy =[]
+
 if sha1(files[0]) == sha1(files[1]):
     print('Matched')
+    files_matched.append(files[0])
+    files_matched_copy.append(files[1])
+
+
 else:
     print('Not Matched')
-
+print("copy: ",files_matched_copy)
