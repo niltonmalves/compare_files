@@ -1,5 +1,5 @@
 import hashlib, sys, glob, argparse
-
+from util import read_txt
 import os
 
 def dir_path(path):
@@ -81,4 +81,7 @@ def run():
 
 if __name__ == "__main__":
     run()
+    print("start deleting from output_files_matched_copy.txt")
+    for i in read_txt('output_files_matched_copy.txt'):
+        os.remove(i.split('\n')[0])
 
