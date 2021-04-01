@@ -1,2 +1,7 @@
 # compare_files
-encontra arquivos duplicados
+Find duplicate files and delete
+
+```bash
+python main.py -path "pathToLookforduplicatefiles"
+```
+
