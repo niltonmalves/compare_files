@@ -42,7 +42,7 @@ def run():
         # do stuff
         #varrer toda lista a partir do segundo item, e retirar item da lista se repetido.
         for index in range(1, len(files)):
-            # print("index: ", index)
+            print("index: ", index)
             # print("files:", files)
             try:
 
