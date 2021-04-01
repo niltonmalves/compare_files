@@ -84,4 +84,5 @@ if __name__ == "__main__":
     print("start deleting from output_files_matched_copy.txt")
     for i in read_txt('output_files_matched_copy.txt'):
         os.remove(i.split('\n')[0])
+    print("end")
 
