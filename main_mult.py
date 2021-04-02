@@ -59,7 +59,10 @@ def run():
                         f1.write(f"{files[index]}\n")
                     with open('output_files_matched.txt', 'a') as f2:
                         f2.write(f"{files[0]}\n")
-                    os.remove(files[index])
+                    try:
+                        os.remove(files[index])
+                    except:
+                        print('file was already deleted')
                     files.pop(index)
 
 
